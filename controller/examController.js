@@ -307,7 +307,7 @@ const sendEmail = (
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: process.env.EMAIL_USER,
+      user: "vivekanjankc12345@gmail.com",
       pass: "iwjy luqt bnrd xuij",
     },
   });

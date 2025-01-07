@@ -74,7 +74,7 @@ userSchema.pre("save", function (next) {
 // Static method to generate authentication token
 userSchema.statics.generateAuthToken = async (id) => {
   const user = await User.findOne({ _id: id });
-  const token = jwt.sign({ _id: id, user }, process.env.JWTPRIVATEKEY, {
+  const token = jwt.sign({ _id: id, user }, "refresh", {
     noTimestamp: true,
     expiresIn: "1m",
   });

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoString = process.env.DATABASE_URL;
+const mongoString = "mongodb+srv://vivekanjankc:vivek@cluster0.czyye.mongodb.net/";
 
 exports.connectDB = async () => {
   try {
